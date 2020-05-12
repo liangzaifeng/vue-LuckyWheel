@@ -7,7 +7,7 @@
   
 <br>
 
-## LuckyWheel props
+## LuckyWheel Methods
   |方法名 | 说明 | 参数 | 
   |:---------: | :------: | :------: | 
   |onSuccess | 旋转停止后的回到 | params 中奖的下标 |
