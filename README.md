@@ -14,6 +14,8 @@
 
 <br>
 
+如果是vue脚手架的, 请把文件放到src的components中, 或者自己修改下引入组件的路径, 和图片引入的路径, 请看清楚clone下来的文件名
+
 ```
 <template>
   <div id="app">
@@ -27,7 +29,7 @@
 </template>
 
 <script>
-import LuckyWheel from './components/LuckyWheel'; // 引入组件
+import LuckyWheel from './components/vue-LuckyWheel'; // 引入组件
 export default {
   name: 'app',
   data() {
@@ -36,35 +38,35 @@ export default {
       prizeList: [
         {
           name: '奖品1',
-          img: require('./components/LuckyWheel/img/prize1.png')
+          img: require('@/components/vue-LuckyWheel/img/prize1.png')
         },
         {
           name: '奖品2',
-          img: require('./components/LuckyWheel/img/prize2.png')
+          img: require('@/components/vue-LuckyWheel/img/prize2.png')
         },
         {
           name: '奖品3',
-          img: require('./components/LuckyWheel/img/prize3.png')
+          img: require('@/components/vue-LuckyWheel/img/prize3.png')
         },
         {
           name: '奖品4',
-          img: require('./components/LuckyWheel/img/prize4.png')
+          img: require('@/components/vue-LuckyWheel/img/prize4.png')
         },
         {
           name: '奖品5',
-          img: require('./components/LuckyWheel/img/prize4.png')
+          img: require('@/components/vue-LuckyWheel/img/prize4.png')
         },
         {
           name: '奖品6',
-          img: require('./components/LuckyWheel/img/prize5.png')
+          img: require('@/components/vue-LuckyWheel/img/prize5.png')
         },
         {
           name: '奖品7',
-          img: require('./components/LuckyWheel/img/prize6.png')
+          img: require('@/components/vue-LuckyWheel/img/prize6.png')
         },
         {
           name: '谢谢惠顾',
-          img: require('./components/LuckyWheel/img/prize7.png')
+          img: require('@/components/vue-LuckyWheel/img/prize7.png')
         }
       ]
     };
