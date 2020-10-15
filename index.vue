@@ -68,8 +68,10 @@ export default {
     async handleClick() {
       if (!this.flag) return;
       this.flag = false;
-      // 随机需要选中的索引
-      let winningIndex = await this.asyncAjax();
+      // 如果有异步请求则执行, 没有则生成需要选中的随机数索引
+       let winningIndex = this.asyncAjax
+        ? await this.asyncAjax()
+        : Math.floor(Math.random() * this.prizeList.length - 1)
       console.log('winningIndex:' + winningIndex);
       this.winningIndex = winningIndex;
       if (this.isPointer) {
